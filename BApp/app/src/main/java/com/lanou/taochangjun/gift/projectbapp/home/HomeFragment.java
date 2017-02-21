@@ -15,6 +15,10 @@ import java.util.ArrayList;
 /**
  * Created by imac on 2017/2/20.
  */
+/**
+ * 作者:陶长骏
+ * 作用:首页页面的Fragment
+ */
 
 public class HomeFragment extends BaseFragment {
     private TabLayout tabLayout;
@@ -35,20 +39,16 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     public void initData() {
-        //让程序刚运行就显示选中第一个
-       replace (new RecommendFragment());
+
 
         fragments.add(new FocusFragment());
         fragments.add(new RecommendFragment());
         HomeVpAdapter adapter = new HomeVpAdapter(getChildFragmentManager(),fragments);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+        //让程序刚运行就显示首页中的第二个Fragment
+        viewPager.setCurrentItem(2,true);
 
     }
-    public void replace(Fragment fragment) {
-        FragmentManager manager = getChildFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.replace, fragment);
-        transaction.commit();
-    }
+
 }

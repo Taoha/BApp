@@ -9,6 +9,10 @@ import com.lanou.taochangjun.gift.projectbapp.base.BaseFragment;
  * Created by imac on 2017/2/20.
  */
 
+/**
+ * 作者:陶长骏
+ * 作用:最火页面的Fragment
+ */
 public class FireFragment extends BaseFragment {
     @Override
     public int setlayout() {

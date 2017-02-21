@@ -9,6 +9,10 @@ import java.util.ArrayList;
 /**
  * Created by imac on 2017/2/20.
  */
+/**
+ * 作者:陶长骏
+ * 作用:首页页面的标题获取
+ */
 
 public class HomeVpAdapter extends FragmentPagerAdapter {
     private ArrayList<Fragment> fragments;

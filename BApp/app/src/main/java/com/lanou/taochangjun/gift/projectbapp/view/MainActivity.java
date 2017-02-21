@@ -13,7 +13,10 @@ import android.widget.TextView;
 
 import com.lanou.taochangjun.gift.projectbapp.R;
 import com.lanou.taochangjun.gift.projectbapp.base.AbsBaseActivity;
+import com.lanou.taochangjun.gift.projectbapp.fire.FireFragment;
+import com.lanou.taochangjun.gift.projectbapp.found.FoundFragment;
 import com.lanou.taochangjun.gift.projectbapp.home.HomeFragment;
+import com.lanou.taochangjun.gift.projectbapp.me.MeFragment;
 
 
 public class MainActivity extends AbsBaseActivity implements View.OnClickListener {
@@ -60,16 +63,16 @@ public class MainActivity extends AbsBaseActivity implements View.OnClickListene
         FragmentTransaction transaction = manager.beginTransaction();
         switch (v.getId()){
             case R.id.radio_home:
-                transaction.replace(R.id.radio_home,new HomeFragment());
+                transaction.replace(R.id.frame_layout,new HomeFragment());
                 break;
             case R.id.radio_fire:
-                transaction.replace(R.id.radio_fire,new HomeFragment());
+                transaction.replace(R.id.frame_layout,new FireFragment());
                 break;
             case R.id.radio_found:
-                transaction.replace(R.id.radio_found,new HomeFragment());
+                transaction.replace(R.id.frame_layout,new FoundFragment());
                 break;
             case R.id.radio_me:
-                transaction.replace(R.id.radio_me,new HomeFragment());
+                transaction.replace(R.id.frame_layout,new MeFragment());
                 break;
         }
         transaction.commit();
