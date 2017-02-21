@@ -37,32 +37,32 @@ public abstract class AbsBaseActivity extends AppCompatActivity {
          */
 
         //1.定制一个流程界面也就是绑定布局/初始化代码/编写逻辑代码
-        setContentView(R.layout.root_layout);
-        mRootlayout = (LinearLayout) findViewById(R.id.base_root_layout);
-        //2.处理子页面的布局
-        View childView = getLayoutInflater()
-                .inflate(getLayout(), null);
-        // 3.将子界面加入根布局
-        mRootlayout.addView(childView);
-// 4.处理标题栏
-        mTitleLayout = (RelativeLayout) findViewById(R.id.title_layout);
-        mBackIv = (ImageView) findViewById(R.id.title_back_iv);
-        mTitleTv = (TextView) findViewById(R.id.title_middle_tv);
-        mRightIv = (ImageView) findViewById(R.id.title_right_iv);
-        mBackIv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-
-        initTitle(mTitleLayout,mBackIv,mTitleTv,mRightIv);
+        setContentView(getLayout());
+//        mRootlayout = (LinearLayout) findViewById(R.id.base_root_layout);
+//        //2.处理子页面的布局
+//        View childView = getLayoutInflater()
+//                .inflate(getLayout(), null);
+//        // 3.将子界面加入根布局
+//        mRootlayout.addView(childView);
+//// 4.处理标题栏
+//        mTitleLayout = (RelativeLayout) findViewById(R.id.title_layout);
+//        mBackIv = (ImageView) findViewById(R.id.title_back_iv);
+//        mTitleTv = (TextView) findViewById(R.id.title_middle_tv);
+//        mRightIv = (ImageView) findViewById(R.id.title_right_iv);
+//        mBackIv.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                finish();
+//            }
+//        });
+//
+//
+//        initTitle(mTitleLayout,mBackIv,mTitleTv,mRightIv);
         initView();
         initData();
     }
-    //标题
-    protected abstract void initTitle(RelativeLayout mTitleLayout, ImageView mBackIv,TextView mTitleTv,ImageView mRightIv);
+//    //标题
+//    protected abstract void initTitle(RelativeLayout mTitleLayout, ImageView mBackIv,TextView mTitleTv,ImageView mRightIv);
 
     //定绑定布局
     protected abstract int getLayout();

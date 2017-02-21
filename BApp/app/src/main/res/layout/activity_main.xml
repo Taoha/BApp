@@ -1,18 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.lanou.taochangjun.gift.projectbapp.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.lanou.taochangjun.gift.projectbapp.view.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-</RelativeLayout>
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/main_Group">
+        <RadioButton
+
+            android:drawableTop="@drawable/home"
+            android:button="@null"
+            android:id="@+id/radio_home"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="首页"/>
+
+        <RadioButton
+            android:drawableTop="@drawable/fire"
+            android:button="@null"
+            android:text="最火"
+            android:id="@+id/radio_fire"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <RadioButton
+            android:drawableTop="@drawable/found"
+            android:button="@null"
+            android:text="发现"
+            android:id="@+id/radio_found"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <RadioButton
+            android:drawableTop="@drawable/me"
+            android:id="@+id/radio_me"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="我"/>
+
+    </RadioGroup>
+</LinearLayout>
