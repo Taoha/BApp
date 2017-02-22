@@ -2,8 +2,6 @@ package com.lanou.taochangjun.gift.projectbapp.home;
 
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
@@ -27,7 +25,7 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     public int setlayout() {
-        return R.layout.tab_vp;
+        return R.layout.fragment_home;
     }
 
     @Override

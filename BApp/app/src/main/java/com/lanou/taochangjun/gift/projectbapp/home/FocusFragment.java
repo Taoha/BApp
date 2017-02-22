@@ -15,7 +15,7 @@ import com.lanou.taochangjun.gift.projectbapp.base.BaseFragment;
 public class FocusFragment extends BaseFragment {
     @Override
     public int setlayout() {
-        return R.layout.fragment_focus;
+        return R.layout.fragment_home_focus;
     }
 
     @Override

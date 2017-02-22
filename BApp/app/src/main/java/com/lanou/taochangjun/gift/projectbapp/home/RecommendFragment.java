@@ -15,7 +15,7 @@ import com.lanou.taochangjun.gift.projectbapp.base.BaseFragment;
 public class RecommendFragment extends BaseFragment {
     @Override
     public int setlayout() {
-        return R.layout.fragment_recommend;
+        return R.layout.fragment_home_recommend;
     }
 
     @Override
