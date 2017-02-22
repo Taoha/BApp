@@ -10,6 +10,7 @@ import com.lanou.taochangjun.gift.projectbapp.base.BaseFragment;
  */
 
 public class MeFragment extends BaseFragment {
+
     @Override
     public int setlayout() {
         return R.layout.fragment_me;

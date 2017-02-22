@@ -32,8 +32,8 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     public void initView(View view) {
-        tabLayout = (TabLayout) view.findViewById(R.id.tb_home_top);
-        viewPager = (ViewPager) view.findViewById(R.id.vp_home_top);
+        tabLayout = bindView(R.id.tb_home_top);
+        viewPager = bindView(R.id.vp_home_top);
 
     }
 
