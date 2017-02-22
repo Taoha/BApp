@@ -29,7 +29,7 @@ public class MainActivity extends AbsBaseActivity implements View.OnClickListene
 
     @Override
     protected void initView() {
-        radio_home = (RadioButton) findViewById(R.id.radio_home);
+        radio_home = byView(R.id.radio_home);
         radio_home.setOnClickListener(this);
         radio_home.setChecked(true);
         findViewById(R.id.radio_home).setOnClickListener(this);
