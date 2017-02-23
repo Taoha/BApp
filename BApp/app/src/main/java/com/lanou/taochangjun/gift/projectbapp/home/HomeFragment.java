@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.lanou.taochangjun.gift.projectbapp.R;
 import com.lanou.taochangjun.gift.projectbapp.base.BaseFragment;
+import com.lanou.taochangjun.gift.projectbapp.home.focus.FocusFragment;
 
 import java.util.ArrayList;
 
