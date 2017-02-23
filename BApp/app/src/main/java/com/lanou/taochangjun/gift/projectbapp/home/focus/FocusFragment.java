@@ -1,4 +1,4 @@
-package com.lanou.taochangjun.gift.projectbapp.home;
+package com.lanou.taochangjun.gift.projectbapp.home.focus;
 
 import android.view.View;
 

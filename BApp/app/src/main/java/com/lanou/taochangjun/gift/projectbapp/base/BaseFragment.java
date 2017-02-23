@@ -2,6 +2,7 @@ package com.lanou.taochangjun.gift.projectbapp.base;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -51,5 +52,11 @@ public abstract class BaseFragment extends android.support.v4.app.Fragment{
     //findViewById操作
     public <T extends View> T bindView(int id){
         return (T) getView().findViewById(id);
+    }
+    //跳转
+    protected void goTo(Class<? extends AbsBaseActivity> to) {
+        Intent intent = new Intent();
+        intent.setClass(getContext(), to);
+        startActivity(intent);
     }
 }
