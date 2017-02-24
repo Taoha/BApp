@@ -2,6 +2,9 @@ package com.lanou.taochangjun.gift.projectbapp.internet;
 
 /**
  * Created by dllo on 17/2/21.
+ * 制作者:张德鹏 2月21日
+ * 全部网络的接口
+ *
  */
 
 public class Url {

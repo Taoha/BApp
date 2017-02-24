@@ -16,10 +16,10 @@
 
     </FrameLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#d1d1d1"/>
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@mipmap/home_navigation_divider"/>
 
     <RadioGroup
         android:orientation="horizontal"
