@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lanou.taochangjun.gift.projectbapp.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -20,13 +21,13 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class FocusAdapter extends RecyclerView.Adapter<FocusAdapter.MyViewHolder> {
     private Context mContext;
-    private List<FocusBean.VideoListBean> mFocusBean;
+    private List<FocusBean> mFocusBean;
 
     public FocusAdapter(Context context) {
         mContext = context;
     }
 
-    public void setFocusBean(List<FocusBean.VideoListBean> focusBean) {
+    public void setFocusBean(List<FocusBean> focusBean) {
         mFocusBean = focusBean;
         notifyDataSetChanged();
     }
@@ -40,7 +41,11 @@ public class FocusAdapter extends RecyclerView.Adapter<FocusAdapter.MyViewHolder
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-
+        Picasso.with(mContext).load(mFocusBean.get(position).getAvatar()).into(holder.iv_head);
+        Picasso.with(mContext).load(mFocusBean.get(position).getVideoList().get(position).getLink()).into(holder.iv_substance);
+        holder.tv_author.setText(mFocusBean.get(position).getNick());
+        holder.tv_substance.setText(mFocusBean.get(position).getIntro());
+        holder.tv_present.setText(mFocusBean.get(position).getVideoList().get(position).getTitle());
 
     }
 

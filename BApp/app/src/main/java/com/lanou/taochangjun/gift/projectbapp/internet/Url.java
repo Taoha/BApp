@@ -113,6 +113,7 @@ public class Url {
     // 关注*******************************
     public static final String ATTENTION = "http://m.live.netease.com/bolo/api/index/recommendFollow.htm?pageNum=1&userId=5702015542626208498&pageSize=4";
     public static final String ATTENTIONUNDER = "http://m.live.netease.com/bolo/api/index/personalizedRecommend.htm?pageNum=2&userId=5702015542626208498&pageSize=20";
+    public static final String AA = "http://api.liwushuo.com/v2/channels/101/items_v2?ad=2&gender=1&generation=2&limit=20&offset=0";
 
 
 

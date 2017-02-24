@@ -29,5 +29,6 @@ dependencies {
     compile 'com.android.support:design:25.0.0'
     //圆形头像
     compile 'de.hdodenhof:circleimageview:2.1.0'
-    compile 'com.squareup.picasso:picasso-parent:2.5.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.code.gson:gson:2.8.0'
 }

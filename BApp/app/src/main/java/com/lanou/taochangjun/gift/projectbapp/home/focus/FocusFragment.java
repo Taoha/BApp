@@ -1,5 +1,6 @@
 package com.lanou.taochangjun.gift.projectbapp.home.focus;
 
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.lanou.taochangjun.gift.projectbapp.R;
@@ -13,6 +14,7 @@ import com.lanou.taochangjun.gift.projectbapp.base.BaseFragment;
  * 作用:页面的关注Fragment
  */
 public class FocusFragment extends BaseFragment {
+    private RecyclerView mRecyclerView;
     @Override
     public int setlayout() {
         return R.layout.fragment_home_focus;
