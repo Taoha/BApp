@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.lanou.taochangjun.gift.projectbapp.R;
 import com.squareup.picasso.Picasso;
 
@@ -41,8 +42,8 @@ public class FocusAdapter extends RecyclerView.Adapter<FocusAdapter.MyViewHolder
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Picasso.with(mContext).load(mFocusBean.get(position).getAvatar()).into(holder.iv_head);
-        Picasso.with(mContext).load(mFocusBean.get(position).getVideoList().get(position).getLink()).into(holder.iv_substance);
+        Glide.with(mContext).load(mFocusBean.get(position).getAvatar()).override(600,200).into(holder.iv_head);
+        Glide.with(mContext).load(mFocusBean.get(position).getVideoList().get(position).getLink()).override(600,200).into(holder.iv_substance);
         holder.tv_author.setText(mFocusBean.get(position).getNick());
         holder.tv_substance.setText(mFocusBean.get(position).getIntro());
         holder.tv_present.setText(mFocusBean.get(position).getVideoList().get(position).getTitle());

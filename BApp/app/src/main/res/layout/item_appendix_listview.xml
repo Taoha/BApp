@@ -54,7 +54,7 @@
     </RelativeLayout>
 
 
-    <!-- 最大图 -->
+       <!-- 最大图 -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp">
@@ -64,7 +64,7 @@
             android:id="@+id/item_appendix_listview_article_one_ploto"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@mipmap/splash_without_load" />
+             />
 
         <!--  标题  -->
         <TextView
@@ -129,7 +129,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginRight="1dp"
-                android:background="@mipmap/ic_launchee" />
+                 />
 
             <TextView
                 android:id="@+id/item_appendix_listview_article_two_title"
@@ -185,7 +185,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginLeft="1dp"
-                android:background="@mipmap/ic_launchee" />
+                />
 
             <TextView
                 android:id="@+id/item_appendix_listview_article_three_title"
@@ -250,7 +250,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginRight="1dp"
-                android:background="@mipmap/ic_launchee" />
+                 />
 
             <TextView
                 android:id="@+id/item_appendix_listview_article_four_title"
@@ -305,7 +305,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginLeft="1dp"
-                android:background="@mipmap/ic_launchee" />
+                 />
 
             <TextView
                 android:id="@+id/item_appendix_listview_article_five_title"

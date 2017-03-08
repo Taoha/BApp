@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--为您推荐的每一行item-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_recommend_foryou_it_photo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="1dp"
+            />
+
+        <TextView
+            android:id="@+id/item_recommend_foryou_it_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="9dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="暴走游玩啥游戏 06 剑网三 愿我们江湖再见"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_recommend_foryou_it_name_photo"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/ic_launchee" />
+
+            <TextView
+                android:id="@+id/item_recommend_foryou_it_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="暴走玩啥游戏"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

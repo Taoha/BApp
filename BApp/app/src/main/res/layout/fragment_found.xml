@@ -2,6 +2,80 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+    >
 
-</LinearLayout>
+
+            <!--发现页fragment-->
+
+
+            <!-- 上半部分搜索框  与大家都在搜 -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="#f1c651">
+
+                <!-- 搜索框 -->
+                <LinearLayout
+                    android:id="@+id/fragment_found_search_ll"
+                    android:background="@drawable/shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/home_search"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="搜索视频/UP主"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大家都在搜"
+                    android:textColor="#fafafa"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <GridView
+                    android:id="@+id/fragment_found_search_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="3">
+
+
+                </GridView>
+
+
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/fragment_found_search_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+
+        </LinearLayout>
+
+
+
+
+

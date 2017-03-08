@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lanou.taochangjun.gift.projectbapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launchee"
@@ -15,9 +17,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".view.EnterActivity" />
 
-        <activity android:name=".view.MainActivity"></activity>
-        <activity android:name=".view.EnterActivity"/>
+        <!-- android:configChanges="orientation"android:screenOrientation="portrait" -->
+        <activity
+            android:name=".video.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WebViewActivity.WebViewActivity"></activity>
     </application>
 
 </manifest>
