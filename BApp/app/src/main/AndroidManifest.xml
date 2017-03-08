@@ -11,7 +11,7 @@
     <application
         android:name=".volley.MyApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launchee"
         android:label="网易菠萝"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
