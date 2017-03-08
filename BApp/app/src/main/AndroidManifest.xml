@@ -8,6 +8,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".volley.MyApp"
         android:allowBackup="true"
@@ -24,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <!-- 必须初始化 -->
         <activity
             android:name="io.vov.vitamio.activity.InitActivity"
@@ -36,6 +39,20 @@
         <activity android:name=".view.EnterActivity"/>
         <activity android:name=".fire.FireActivity"/>
 
+=======
+        <activity android:name=".view.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".view.EnterActivity" />
+
+        <!-- android:configChanges="orientation"android:screenOrientation="portrait" -->
+        <activity
+            android:name=".video.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WebViewActivity.WebViewActivity"></activity>
+>>>>>>> feature/推荐页面
     </application>
 
 </manifest>

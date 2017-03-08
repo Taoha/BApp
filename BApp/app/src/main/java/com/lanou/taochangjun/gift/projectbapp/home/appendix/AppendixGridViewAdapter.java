@@ -1,6 +1,7 @@
 package com.lanou.taochangjun.gift.projectbapp.home.appendix;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.lanou.taochangjun.gift.projectbapp.R;
 import com.squareup.picasso.Picasso;
 
@@ -26,9 +28,19 @@ public class AppendixGridViewAdapter extends BaseAdapter {
     private Context context;
     private List<AppendixListBean> appendixListBeanList ;
 
+    public AppendixGridViewAdapter(Context context) {
+
+        this.context = context;
+    }
+
+    public void setAppendixListBeanList(List<AppendixListBean> appendixListBeanList) {
+        this.appendixListBeanList = appendixListBeanList;
+        notifyDataSetChanged();
+    }
+
     @Override
     public int getCount() {
-        return appendixListBeanList .size() >0 ? appendixListBeanList.size() : 0;
+        return appendixListBeanList .size() >0 ? 6 : 0;
     }
 
     @Override
@@ -53,8 +65,8 @@ public class AppendixGridViewAdapter extends BaseAdapter {
         }
         viewHolder.title.setText(appendixListBeanList.get(position).getTitle());
         viewHolder.name.setText(appendixListBeanList.get(position).getChannelName());
-        Picasso.with(context).load(appendixListBeanList.get(position).getCover()).into(viewHolder.photo);
-        Picasso.with(context).load(appendixListBeanList.get(position).getAvatar()).into(viewHolder.namephoto);
+        Glide.with(context).load(appendixListBeanList.get(position).getCover()).override(600,200).into(viewHolder.photo);
+        Glide.with(context).load(appendixListBeanList.get(position).getAvatar()).override(600,200).into(viewHolder.namephoto);
         return convertView;
     }
 

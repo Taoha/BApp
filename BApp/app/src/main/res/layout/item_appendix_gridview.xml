@@ -9,7 +9,7 @@
         android:id="@+id/item_appendix_girdview_photo"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@mipmap/ic_launchee"/>
+   />
 
     <TextView
         android:id="@+id/item_appendix_girdview_title"

@@ -36,10 +36,10 @@ public class WelcomeActivity extends AbsBaseActivity {
 
     @Override
     protected void initView() {
-        imageView = (ImageView) findViewById(R.id.activity_welcome_iv);
+        imageView = byView(R.id.activity_welcome_iv);
         imageView.setImageResource(R.mipmap.splash_bg);
-        next = (ImageView) findViewById(R.id.activity_welcome_iv_next);
-        number = (TextView) findViewById(R.id.activity_welcome_tv_number);
+        next = byView(R.id.activity_welcome_iv_next);
+        number = byView(R.id.activity_welcome_tv_number);
 
     }
 
@@ -51,6 +51,7 @@ public class WelcomeActivity extends AbsBaseActivity {
             public void onClick(View v) {
                 timer.cancel();
                 goTo(MainActivity.class);
+                finish();
             }
         });
 
@@ -71,7 +72,10 @@ public class WelcomeActivity extends AbsBaseActivity {
               @Override
               public void onFinish() {
                     goTo(MainActivity.class);
+                  finish();
               }
           }.start();
     }
+
+
 }
