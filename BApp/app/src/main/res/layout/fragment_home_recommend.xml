@@ -4,8 +4,8 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-<<<<<<< HEAD
-=======
+
+
 
         <!--首页推荐页fragment-->
 
@@ -21,7 +21,6 @@
 
 
 
->>>>>>> feature/推荐页面
 
 
 </LinearLayout>

@@ -45,18 +45,18 @@ public class FocusAdapter extends RecyclerView.Adapter<FocusAdapter.MyViewHolder
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-<<<<<<< HEAD
+
 //        FocusBean focusBean = mFocusBean.get(position);
 //        String auatar = focusBean.getAvatar();
 //        if (null != auatar && !auatar.isEmpty()) {
 //            Picasso.with(mContext).load(auatar).into(holder.iv_head);
 //
 //        }
-        Picasso.with(mContext).load(mFocusBean.get(position).getAvatar()).into(holder.iv_head);
-=======
+       // Picasso.with(mContext).load(mFocusBean.get(position).getAvatar()).into(holder.iv_head);
+
         Glide.with(mContext).load(mFocusBean.get(position).getAvatar()).override(600,200).into(holder.iv_head);
         Glide.with(mContext).load(mFocusBean.get(position).getVideoList().get(position).getLink()).override(600,200).into(holder.iv_substance);
->>>>>>> feature/推荐页面
+
         holder.tv_author.setText(mFocusBean.get(position).getNick());
         holder.tv_substance.setText(mFocusBean.get(position).getIntro());
 
