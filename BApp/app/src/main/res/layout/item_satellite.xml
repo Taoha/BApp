@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="29dp"
+            android:src="@mipmap/ic_boluo"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageview2"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="29dp"
+            android:src="@mipmap/ic_boluo"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/imageview3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="29dp"
+            android:src="@mipmap/ic_boluo"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageview4"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="29dp"
+            android:src="@mipmap/ic_boluo"/>
+
+        <ImageView
+            android:id="@+id/imageview8"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/coupon_invite_item_bolo_n"/>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

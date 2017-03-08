@@ -31,4 +31,19 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+
+
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.facebook.rebound:rebound:0.3.8'
+//第三方视频播放
+    compile project(':vitamio2')
+
+
+
+
+
+
 }

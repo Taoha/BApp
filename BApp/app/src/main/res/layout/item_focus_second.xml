@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="140dp"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_substance"
+        android:layout_width="135dp"
+        android:scaleType="fitXY"
+        android:layout_height="95dp"
+        android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:textSize="9dp"
+        android:textColor="#000"
+        android:id="@+id/tv_present"
+        android:maxLines="2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="adasdafasfasfdsfdaasda"/>
+
+</LinearLayout>

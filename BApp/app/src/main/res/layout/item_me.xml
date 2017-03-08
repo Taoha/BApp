@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="80dp"
             android:text="未知菠萝"
             android:textColor="#000"
             android:textSize="16sp"/>
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="80dp"
             android:background="#FFB90F"
             android:text="马上登入"
             android:textColor="#ffff"/>

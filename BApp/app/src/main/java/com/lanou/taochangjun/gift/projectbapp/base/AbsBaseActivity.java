@@ -1,10 +1,14 @@
 package com.lanou.taochangjun.gift.projectbapp.base;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -21,6 +25,8 @@ import com.lanou.taochangjun.gift.projectbapp.R;
 
 public abstract class AbsBaseActivity extends AppCompatActivity {
 
+    /** 是否沉浸状态栏 **/
+    private boolean isSetStatusBar = true;
     private LinearLayout mRootlayout;
     private RelativeLayout mTitleLayout;
     private ImageView mBackIv;
@@ -31,6 +37,9 @@ public abstract class AbsBaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        if (isSetStatusBar) {
+            steepStatusBar();
+        }
         /**
          * 封装简单的标题栏的步骤
          * 1给基类绑定一个大的布局
@@ -128,7 +137,28 @@ public abstract class AbsBaseActivity extends AppCompatActivity {
         intent.putExtras(bundle);
 
         startActivity(intent);
+        /**
+         *  沉浸状态栏
+         */
 
+
+    }
+    private void steepStatusBar() {
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//            // 透明状态栏
+//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//            // 透明导航栏
+//            getWindow().addFlags(
+//                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//5.0 全透明实现
+            Window window = getWindow();
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.TRANSPARENT);//calculateStatusColor(Color.WHITE, (int) alphaValue)
+        }
     }
 
 }
