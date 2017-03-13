@@ -26,6 +26,7 @@
 
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -88,238 +89,246 @@
 
 
 
-    <!--<RelativeLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <!--&lt;!&ndash; 滑动内容&ndash;&gt;-->
-        <!--<ScrollView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content">-->
+        <!-- 滑动内容-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <!--<LinearLayout-->
-                <!--android:orientation="vertical"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent">-->
-
-
-                <!--<TextView-->
-                    <!--android:layout_marginLeft="10dp"-->
-                    <!--android:layout_marginTop="20dp"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="那些脑洞突破天际的人本广告集合"-->
-                    <!--android:textColor="#000000"-->
-                    <!--android:textSize="17sp"-->
-                    <!--/>-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
 
-                <!--<LinearLayout-->
-                    <!--android:layout_marginTop="10dp"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content">-->
-
-                    <!--<ImageView-->
-                        <!--android:layout_marginLeft="10dp"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:background="@mipmap/ic_home_list_row_video_play"/>-->
-
-                    <!--<TextView-->
-                        <!--android:layout_marginLeft="10dp"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:text="3345"-->
-                        <!--/>-->
-
-                    <!--<RelativeLayout-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="match_parent">-->
-
-                        <!--<ImageView-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:background="@mipmap/ic_arrow_dowm_more"-->
-                            <!--android:layout_alignParentRight="true"-->
-                            <!--android:layout_marginRight="20dp"-->
-                            <!--/>-->
-
-                    <!--</RelativeLayout>-->
-
-                <!--</LinearLayout>-->
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="那些脑洞突破天际的人本广告集合"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    />
 
 
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <!--<TextView-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:layout_marginLeft="10dp"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="视频来源均为网络, 感谢那些分享的大大们"-->
-                    <!--android:textSize="13sp"/>-->
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_home_list_row_video_play"/>
 
-                <!--&lt;!&ndash;分割线&ndash;&gt;-->
-                <!--<ImageView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:background="@mipmap/home_navigation_divider"/>-->
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3345"
+                        />
 
-                <!--&lt;!&ndash; 中间的关注 &ndash;&gt;-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                <!--<LinearLayout-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="60dp"-->
-                    <!--android:orientation="horizontal">-->
-                    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_arrow_dowm_more"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            />
 
-                        <!--android:layout_width="40dp"-->
-                        <!--android:layout_height="40dp"-->
-                        <!--android:background="@mipmap/ic_launchee"-->
-                        <!--android:layout_marginLeft="10dp"-->
-                        <!--android:layout_marginTop="5dp"-->
-                        <!--/>-->
+                    </RelativeLayout>
 
-                    <!--<LinearLayout-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:orientation="vertical">-->
-                        <!--<TextView-->
-
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_marginTop="5dp"-->
-                            <!--android:layout_marginLeft="10dp"-->
-                            <!--android:text="神广告"-->
-                            <!--android:textSize="15sp"-->
-                            <!--android:textColor="#000000"-->
-                            <!--/>-->
-                        <!--<TextView-->
-
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:text="搬运国内外神奇好看的广告"-->
-                            <!--android:layout_marginTop="5dp"-->
-                            <!--android:layout_marginLeft="10dp"-->
-                            <!--/>-->
-
-                    <!--</LinearLayout>-->
-
-                <!--</LinearLayout>-->
-
-                <!--&lt;!&ndash;分割线&ndash;&gt;-->
-                <!--<ImageView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:background="@mipmap/home_navigation_divider"/>-->
-
-
-                <!--&lt;!&ndash; 跟新多少级&ndash;&gt;-->
-                <!--<LinearLayout-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="50dp"-->
-                    <!--android:orientation="horizontal">-->
-
-                    <!--<TextView-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:text="更新至第777级"-->
-                        <!--android:textColor="#000000"-->
-                        <!--android:textSize="17sp"-->
-                        <!--android:layout_marginLeft="10dp"-->
-                        <!--android:layout_marginTop="15dp"/>-->
-
-                    <!--<RelativeLayout-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="match_parent">-->
-                        <!--<ImageView-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:background="@mipmap/ic_video_set_more"-->
-                            <!--android:layout_centerVertical="true"-->
-                            <!--android:layout_alignParentRight="true"-->
-                            <!--android:layout_marginRight="20dp"/>-->
-
-                    <!--</RelativeLayout>-->
-
-
-                <!--</LinearLayout>-->
+                </LinearLayout>
 
 
 
-                <!--&lt;!&ndash;选择级数&ndash;&gt;-->
-                <!--<android.support.v7.widget.RecyclerView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content">-->
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="视频来源均为网络, 感谢那些分享的大大们"
+                    android:textSize="13sp"/>
 
-                <!--</android.support.v7.widget.RecyclerView>-->
+                <!--分割线-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/home_navigation_divider"/>
+
+                <!-- 中间的关注 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@mipmap/ic_launchee"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="神广告"
+                            android:textSize="15sp"
+                            android:textColor="#000000"
+                            />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="搬运国内外神奇好看的广告"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--分割线-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/home_navigation_divider"/>
 
 
-                <!--&lt;!&ndash;分割线&ndash;&gt;-->
-                <!--<ImageView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:background="@mipmap/home_navigation_divider"/>-->
+                <!-- 跟新多少级-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更新至第777级"
+                        android:textColor="#000000"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/ic_video_set_more"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"/>
+
+                    </RelativeLayout>
 
 
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="更多推荐"-->
-                    <!--android:textColor="#000000"-->
-                    <!--android:textSize="17sp"-->
-                    <!--android:layout_marginLeft="10dp"-->
-                    <!--android:layout_marginTop="15dp"/>-->
-
-                <!--<ListView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="match_parent">-->
-
-                <!--</ListView>-->
-
-
-            <!--</LinearLayout>-->
-        <!--</ScrollView>-->
+                </LinearLayout>
 
 
 
 
 
 
-        <!--&lt;!&ndash;评论 &ndash;&gt;-->
-        <!--<LinearLayout-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:orientation="vertical"-->
-            <!--android:layout_height="40dp">-->
-            <!--<ImageView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:background="@mipmap/home_navigation_divider"/>-->
+                <!--分割线-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/home_navigation_divider"/>
 
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:orientation="horizontal"-->
-                <!--android:layout_height="match_parent">-->
-                <!--<ImageView-->
-                    <!--android:layout_width="25dp"-->
-                    <!--android:layout_height="25dp"-->
-                    <!--android:layout_marginLeft="10dp"-->
-                    <!--android:layout_gravity="center_vertical"-->
-                    <!--android:background="@mipmap/ic_quick_word_d"/>-->
 
-                <!--<ImageView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginLeft="10dp"-->
-                    <!--android:layout_marginTop="5dp"-->
-                    <!--android:background="@mipmap/ic_comment_bar_d"-->
-                    <!--/>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多推荐"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"/>
 
-            <!--</LinearLayout>-->
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        <!--</LinearLayout>-->
+                </ListView>
 
-    <!--</RelativeLayout>-->
+
+                <GridView
+                    android:id="@+id/activity_video_gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="860dp"
+                    >
+
+                </GridView>
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+        <!--评论 -->
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/home_navigation_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/ic_quick_word_d"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/ic_comment_bar_d"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 
 
