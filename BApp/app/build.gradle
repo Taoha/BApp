@@ -38,27 +38,22 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.google.code.gson:gson:2.8.0'
-
     compile 'com.squareup.okhttp3:okhttp:3.5.0'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
-
-
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     compile 'com.facebook.rebound:rebound:0.3.8'
-//第三方视频播放
+    //第三方视频播放
     compile project(':vitamio2')
-
-
-
-
-
-
-
     compile 'com.squareup.okhttp3:okhttp:3.6.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile files('libs/jiecaovideoplayer-5.5.1-javadoc.jar')
     compile files('libs/jiecaovideoplayer-5.5.1-sources.jar')
     compile project(':libzxing')
-
+    compile files('libs/AMap3DMap_4.1.3_AMapNavi_1.9.4_AMapSearch_4.0.0_AMapLocation_3.3.0_20170118.jar')
+    compile files('libs/ShareSDK-Core-2.8.1.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.8.1.jar')
+    compile files('libs/ShareSDK-QQ-2.8.1.jar')
+    compile files('libs/MobTools-2017.0216.1054.jar')
+    compile files('libs/MobCommons-2017.0216.1054.jar')
 }

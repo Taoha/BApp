@@ -13,6 +13,7 @@
 
 
             <LinearLayout
+                android:id="@+id/fragment_found_linearlayout"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:orientation="vertical"
@@ -36,13 +37,19 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5dp"
                         android:background="@mipmap/home_search"/>
+<<<<<<< HEAD
                     <TextView
                         android:id="@+id/title"
+=======
+                    <EditText
+                        android:id="@+id/fragment_found_textview"
+>>>>>>> 580f495184f2d8b1e2bcaab4e3be6b7c85f67173
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="10dp"
-                        android:text="搜索视频/UP主"/>
+                        android:hint="搜索视频/UP主"
+                        />
 
                 </LinearLayout>
 

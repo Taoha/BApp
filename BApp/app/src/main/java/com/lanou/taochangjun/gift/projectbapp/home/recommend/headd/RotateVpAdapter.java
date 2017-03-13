@@ -53,8 +53,8 @@ public class RotateVpAdapter extends PagerAdapter {
         View converView = inflater.inflate(R.layout.item_carouse_pageadapter,container,false);
 
         // 文字
-        TextView textView = (TextView) converView.findViewById(R.id.item_rotate_tv);
-        textView.setText(datas.get(newPosition).getTitle());
+//        TextView textView = (TextView) converView.findViewById(R.id.item_rotate_tv);
+//        textView.setText(datas.get(newPosition).getTitle());
 
         // 视频
 //        JCVideoPlayerStandard jcVideoPlayerStandard = (JCVideoPlayerStandard) findViewById(R.id.actvity_video_jiecao);

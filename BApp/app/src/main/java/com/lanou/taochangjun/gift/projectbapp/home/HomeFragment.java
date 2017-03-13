@@ -65,7 +65,7 @@ public class HomeFragment extends BaseFragment {
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
         //让程序刚运行就显示首页中的第二个Fragment
-        viewPager.setCurrentItem(2,true);
+        viewPager.setCurrentItem(1,true);
 
     }
 

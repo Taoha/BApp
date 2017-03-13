@@ -1,27 +1,39 @@
 package com.lanou.taochangjun.gift.projectbapp.found;
 
 import android.content.Intent;
+<<<<<<< HEAD
 import android.util.Log;
+=======
+
+>>>>>>> 580f495184f2d8b1e2bcaab4e3be6b7c85f67173
 import android.view.View;
+
 import android.widget.GridView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+<<<<<<< HEAD
 import android.widget.TextView;
+=======
+
+>>>>>>> 580f495184f2d8b1e2bcaab4e3be6b7c85f67173
 import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
 import com.lanou.taochangjun.gift.projectbapp.R;
 import com.lanou.taochangjun.gift.projectbapp.base.BaseFragment;
 import com.lanou.taochangjun.gift.projectbapp.fire.FireActivity;
 import com.lanou.taochangjun.gift.projectbapp.internet.MyOkHttpManager;
 import com.lanou.taochangjun.gift.projectbapp.internet.Url;
+import com.lanou.taochangjun.gift.projectbapp.speak.SpeakActivity;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-import okhttp3.OkHttpClient;
+
 
 /**
  * Created by imac on 2017/2/20.
@@ -36,13 +48,14 @@ public class FoundFragment extends BaseFragment {
 
     private GridView gridView;
     private ListView listView;
-    private List<AllSearchBean>gvbean;
+    private List<AllSearchBean> gvbean;
     private List<FoundAppendixBean> lvbean;
     private TextView title;
 
     private FoundAppendixBean lvdate;
     private FoundGridViewAdapter gvAdatper;
     private FoundListViewAdapter lvAdapter;
+    private LinearLayout linearLayout;
 
 
     @Override
@@ -51,9 +64,9 @@ public class FoundFragment extends BaseFragment {
     }
 
 
-
     @Override
     public void initView(View view) {
+<<<<<<< HEAD
         title = bindView(R.id.title);
         title.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +75,11 @@ public class FoundFragment extends BaseFragment {
                 startActivity(intent);
             }
         });
+=======
+
+
+
+>>>>>>> 580f495184f2d8b1e2bcaab4e3be6b7c85f67173
         gridView = (GridView) view.findViewById(R.id.fragment_found_search_gv);
         listView = (ListView) view.findViewById(R.id.fragment_found_search_lv);
         gvbean = new ArrayList<>();
@@ -69,11 +87,13 @@ public class FoundFragment extends BaseFragment {
         gvAdatper = new FoundGridViewAdapter(getContext());
         lvAdapter = new FoundListViewAdapter(getContext());
 
+        linearLayout = (LinearLayout) view.findViewById(R.id.fragment_found_linearlayout);
+
+
     }
 
     @Override
     public void initData() {
-
 
 
         MyOkHttpManager.getsInstance().getAsyncAsString(Url.SEARCH, Url.SEARCHCODE, new MyOkHttpManager.StringCallback() {
@@ -87,12 +107,17 @@ public class FoundFragment extends BaseFragment {
             public void onSuccessful(int requestCode, String result) {
                 Gson gson = new Gson();
 
-                Type type = new TypeToken<List<AllSearchBean>>(){}.getType();
+                Type type = new TypeToken<List<AllSearchBean>>() {
+                }.getType();
 
 
+<<<<<<< HEAD
 
 
                 gvbean = gson.fromJson(result,type);
+=======
+                gvbean = gson.fromJson(result, type);
+>>>>>>> 580f495184f2d8b1e2bcaab4e3be6b7c85f67173
                 gvAdatper.setBean(gvbean);
                 gridView.setAdapter(gvAdatper);
 
@@ -110,8 +135,9 @@ public class FoundFragment extends BaseFragment {
             public void onSuccessful(int requestCode, String result) {
                 Gson gson = new Gson();
 
-                Type type = new TypeToken<List<FoundAppendixBean>>(){}.getType();
-                lvbean = gson.fromJson(result,type);
+                Type type = new TypeToken<List<FoundAppendixBean>>() {
+                }.getType();
+                lvbean = gson.fromJson(result, type);
                 lvAdapter.setBean(lvbean);
                 listView.setAdapter(lvAdapter);
 
@@ -119,5 +145,22 @@ public class FoundFragment extends BaseFragment {
         });
 
 
+
+         linearLayout.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(getContext(), SpeakActivity.class);
+                 startActivity(intent);
+             }
+         });
+
+
     }
+
+
+
+
+
+
+
 }
