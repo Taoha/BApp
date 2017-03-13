@@ -3,11 +3,15 @@ package com.lanou.taochangjun.gift.projectbapp.found;
 import android.content.Intent;
 import android.util.Log;
 
+import android.util.Log;
+
 import android.view.View;
 
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
+
 import android.widget.TextView;
 
 import android.widget.Toast;
@@ -71,6 +75,9 @@ public class FoundFragment extends BaseFragment {
 
 
 
+
+
+
         gridView = (GridView) view.findViewById(R.id.fragment_found_search_gv);
         listView = (ListView) view.findViewById(R.id.fragment_found_search_lv);
         gvbean = new ArrayList<>();
@@ -102,6 +109,10 @@ public class FoundFragment extends BaseFragment {
                 }.getType();
 
 
+
+
+                gvbean = gson.fromJson(result,type);
+                gvbean = gson.fromJson(result, type);
 
 
                 gvbean = gson.fromJson(result,type);

@@ -98,7 +98,6 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
 
 
         // 第三方分享
-        ShareSDK.initSDK(this);
 
 
         ImageView share = (ImageView) findViewById(R.id.activity_video_share);
