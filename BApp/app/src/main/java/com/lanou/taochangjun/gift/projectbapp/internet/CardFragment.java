@@ -96,10 +96,10 @@ public class CardFragment extends Fragment implements View.OnClickListener {
                 Log.d("110", "index:============" + index);
                 Log.d("CardFragment", "卡片点击-" + dataList.get(index).userName);
                 Intent intent = new Intent(getActivity(), FireActivity.class);
-                Log.d("2222", "---->:" + intent);
-                String type = mFireBean.getLinkMp4() +"";
-                Log.d("aaaa", type);
-                intent.putExtra("type",type);
+//                Log.d("2222", "---->:" + intent);
+//                String type = mFireBean.getLinkMp4() +"";
+//                Log.d("aaaa", type);
+//                intent.putExtra("type",type);
                 startActivity(intent);
             }
         };

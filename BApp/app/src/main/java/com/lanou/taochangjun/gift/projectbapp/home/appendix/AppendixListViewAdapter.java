@@ -82,6 +82,8 @@ public class AppendixListViewAdapter extends BaseAdapter {
                     String uri = appendixBeen.get(position).getVideoList().get(0).getLinkMp4();
                     String title = appendixBeen.get(position).getVideoList().get(0).getTitle();
                     String photo = appendixBeen.get(position).getVideoList().get(0).getCover();
+                    String author = appendixBeen.get(position).getVideoList().get(0).getChannelName();
+                    intent.putExtra("author",author);
                     intent.putExtra("Uri",uri);
                     intent .putExtra("title",title);
                     intent.putExtra("photo",photo);
@@ -103,6 +105,8 @@ public class AppendixListViewAdapter extends BaseAdapter {
                     String uri = appendixBeen.get(position).getVideoList().get(1).getLinkMp4();
                     String title = appendixBeen.get(position).getVideoList().get(1).getTitle();
                     String photo = appendixBeen.get(position).getVideoList().get(1).getCover();
+                    String author = appendixBeen.get(position).getVideoList().get(1).getChannelName();
+                    intent.putExtra("author",author);
                     intent.putExtra("Uri",uri);
                     intent .putExtra("title",title);
                     intent.putExtra("photo",photo);
@@ -125,6 +129,8 @@ public class AppendixListViewAdapter extends BaseAdapter {
                     String uri = appendixBeen.get(position).getVideoList().get(2).getLinkMp4();
                     String title = appendixBeen.get(position).getVideoList().get(2).getTitle();
                     String photo = appendixBeen.get(position).getVideoList().get(2).getCover();
+                    String author = appendixBeen.get(position).getVideoList().get(2).getChannelName();
+                    intent.putExtra("author",author);
                     intent.putExtra("Uri",uri);
                     intent .putExtra("title",title);
                     intent.putExtra("photo",photo);
@@ -148,6 +154,8 @@ public class AppendixListViewAdapter extends BaseAdapter {
                     String uri = appendixBeen.get(position).getVideoList().get(3).getLinkMp4();
                     String title = appendixBeen.get(position).getVideoList().get(3).getTitle();
                     String photo = appendixBeen.get(position).getVideoList().get(3).getCover();
+                    String author = appendixBeen.get(position).getVideoList().get(3).getChannelName();
+                    intent.putExtra("author",author);
                     intent.putExtra("Uri",uri);
                     intent .putExtra("title",title);
                     intent.putExtra("photo",photo);
@@ -170,6 +178,8 @@ public class AppendixListViewAdapter extends BaseAdapter {
                     String uri = appendixBeen.get(position).getVideoList().get(4).getLinkMp4();
                     String title = appendixBeen.get(position).getVideoList().get(4).getTitle();
                     String photo = appendixBeen.get(position).getVideoList().get(4).getCover();
+                    String author = appendixBeen.get(position).getVideoList().get(4).getChannelName();
+                    intent.putExtra("author",author);
                     intent.putExtra("Uri",uri);
                     intent .putExtra("title",title);
                     intent.putExtra("photo",photo);

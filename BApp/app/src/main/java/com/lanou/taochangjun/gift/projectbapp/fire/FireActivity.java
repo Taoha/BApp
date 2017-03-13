@@ -62,10 +62,10 @@ public class FireActivity extends AbsBaseActivity implements MediaPlayer.OnInfoL
 
     @Override
     protected void initData() {
-        Intent intent = getIntent();
-        String type = intent.getStringExtra("type");
+//        Intent intent = getIntent();
+//        String type = intent.getStringExtra("type");
         //视频地址
-        String path = "http://bobolive.nosdn.127.net/"+type+"/.mp4";
+        String path = "http://bobolive.nosdn.127.net/aac_bobo_1474415966985_45529404.mp4";
         uri = Uri.parse(path);
         mVideoView.setVideoURI(uri);//设置视频播放地址
 

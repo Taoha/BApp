@@ -1,15 +1,18 @@
 package com.lanou.taochangjun.gift.projectbapp.found;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.lanou.taochangjun.gift.projectbapp.R;
 import com.lanou.taochangjun.gift.projectbapp.base.BaseFragment;
+import com.lanou.taochangjun.gift.projectbapp.fire.FireActivity;
 import com.lanou.taochangjun.gift.projectbapp.internet.MyOkHttpManager;
 import com.lanou.taochangjun.gift.projectbapp.internet.Url;
 
@@ -35,6 +38,7 @@ public class FoundFragment extends BaseFragment {
     private ListView listView;
     private List<AllSearchBean>gvbean;
     private List<FoundAppendixBean> lvbean;
+    private TextView title;
 
     private FoundAppendixBean lvdate;
     private FoundGridViewAdapter gvAdatper;
@@ -50,6 +54,14 @@ public class FoundFragment extends BaseFragment {
 
     @Override
     public void initView(View view) {
+        title = bindView(R.id.title);
+        title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FoundActivity.class);
+                startActivity(intent);
+            }
+        });
         gridView = (GridView) view.findViewById(R.id.fragment_found_search_gv);
         listView = (ListView) view.findViewById(R.id.fragment_found_search_lv);
         gvbean = new ArrayList<>();
@@ -76,6 +88,8 @@ public class FoundFragment extends BaseFragment {
                 Gson gson = new Gson();
 
                 Type type = new TypeToken<List<AllSearchBean>>(){}.getType();
+
+
 
 
                 gvbean = gson.fromJson(result,type);

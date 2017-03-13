@@ -7,12 +7,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lanou.taochangjun.gift.projectbapp.R;
 import com.lanou.taochangjun.gift.projectbapp.WebViewActivity.WebViewActivity;
 import com.lanou.taochangjun.gift.projectbapp.base.BaseFragment;
 import com.lanou.taochangjun.gift.projectbapp.view.EnterActivity;
+import com.lanou.taochangjun.gift.projectbapp.view.RecordActivity;
 import com.xys.libzxing.zxing.activity.CaptureActivity;
 
 /**
@@ -23,6 +25,7 @@ import com.xys.libzxing.zxing.activity.CaptureActivity;
 public class MeFragment extends BaseFragment {
     private Button btn_enter;
     private ImageView zxing;
+    private TextView record_tv;
 
     @Override
     public int setlayout() {
@@ -33,6 +36,14 @@ public class MeFragment extends BaseFragment {
     public void initView(View view) {
         btn_enter = bindView(R.id.btn_enter);
         zxing = bindView(R.id.fragment_me_zxing);
+        record_tv = bindView(R.id.record_tv);
+        record_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), RecordActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
