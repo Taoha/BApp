@@ -52,6 +52,12 @@ public class FocusAdapter extends RecyclerView.Adapter<FocusAdapter.MyViewHolder
 //            Picasso.with(mContext).load(auatar).into(holder.iv_head);
 //
 //        }
+        FocusBean focusBean = mFocusBean.get(position);
+        String auatar = focusBean.getAvatar();
+        if (null != auatar && !auatar.isEmpty()) {
+            Picasso.with(mContext).load(auatar).into(holder.iv_head);
+
+        }
         Picasso.with(mContext).load(mFocusBean.get(position).getAvatar()).into(holder.iv_head);
 
 //        Glide.with(mContext).load(mFocusBean.get(position).getAvatar()).override(600,200).into(holder.iv_head);

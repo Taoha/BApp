@@ -39,7 +39,7 @@ public class ForyouRecycleViewAdapter extends RecyclerView.Adapter<ForyouRecycle
 
     @Override
     public ForyouHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        Log.d("111", "context:" + context);
+
         View view = LayoutInflater.from(context).inflate(R.layout.item_recommend_foryou_it,parent,false);
         ForyouHolder holder = new ForyouHolder(view);
         return holder;
